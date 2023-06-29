@@ -1,0 +1,12 @@
+[
+    {"ime": "Marija", "grad": "Skopje", "prosek": 8.4},
+    {"ime": "Nikola", "grad": "Prilep", "prosek": 7.3},
+    {"ime": "Matej", "grad": "Ohrid", "prosek": 9.6},
+    {"ime": "Aleksandar", "grad": "Gostivar", "prosek": 7.6},
+    {"ime": "Angela", "grad": "Skopje", "prosek": 9.9},
+    {"ime": "Oliver", "grad": "Tetovo", "prosek": 6.5},
+    {"ime": "Petar", "grad": "Skopje", "prosek": 6.8},
+    {"ime": "Teodora", "grad": "Ohrid", "prosek": 7.2},
+    {"ime": "Luka", "grad": "Bitola", "prosek": 9.2},
+    {"ime": "Martin", "grad": "Veles", "prosek": 7.5}
+]
