@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelenchuk</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        table {
+            background-color: white;
+        }
+        input {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ovoshje i zelenchuk</h1>
+    <h3>IME: <%= ime%> <%= prezime%></h3>
+
+    <!--Lista so ovoshje i zelenchuk-->
+    <ul>
+      <% ovoshje.forEach(fruit => { %>
+      <li><%=fruit%></li>
+      <% }); %>
+    </ul>
+    <br>
+    <ul>
+      <% zelenchuk.forEach(vegetable => { %>
+      <li><%=vegetable%></li>
+      <% }); %>
+      </ul>
+
+      <!--Kreiranje ne tabela so site elementi od vitamini-->
+      <table border = "1" width = "60%">
+        <tr>
+            <th>Ime</th>
+            <th>Vitamin</th>
+            <th>Mineral</th>
+        </tr>
+
+        <% vitamini.forEach (vit => { %>
+        <tr>
+            <td><%= vit.ime%></td>
+            <td><%= vit.vitamin%></td>
+            <td><%= vit.mineral%></td>
+        </tr>
+        <% }) %>
+    </table>
+
+    <!--Kreiranje na forma i dodavanje na nov element vo tabela-->
+    <form action="/zelenchuk" method="post">
+        <h2>Dodaj ovoshje ili zelenchuk</h2>
+
+        <label for="ime">Ime:</label><br><input type="text" name="ime" id="ime" required>
+        <br>
+        <label for="vitamin">Vitamin:</label><br><input type="text" name="vitamin" id="vitamin" required>
+        <br>
+        <label for="mineral">Mineral:</label><br><input type="text" name="mineral" id="mineral" required>
+        <br>
+        <br>
+        <input type="submit" value="Dodaj">
+      
+      </form>
+</body>
+</html>
